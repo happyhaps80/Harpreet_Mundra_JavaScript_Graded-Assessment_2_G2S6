@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("lock\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+.login {
+  width: 35vw;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(115, 255, 0);
+  padding: 1rem;
+  font-size: 3rem;
+  line-height: 6rem;
+  text-align: left;
+  background: transparent;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.login h1 {
+  color: #f8df00;
+  text-align: center;
+  font-size: 5rem;
+}
+
+input {
+  height: 5.9rem;
+  width: 100%;
+  font-size: 3.8rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+}
+input:focus {
+  background-color: black;
+  color: white;
+}
+button {
+  position: relative;
+  float: right;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  margin-right: 30%;
+  width: 12rem;
+  color: white;
+  background-color: rgb(67, 185, 67);
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button:active {
+  background-color: rgb(109, 11, 11);
+}
+#visibility {
+  display: inline-end;
+  color: black;
+  float: right;
+  cursor: pointer;
+  transform: translate(0, -112%);
+  background-color: white;
+  border-radius: 1rem;
+  margin-right: 0.25rem;
+  padding: 1.2rem;
+  font-size: 3rem;
+  right: 2rem;
+}
+#visibility:focus {
+  color: white;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 62.5%;
+  }
+  .login {
+    width: 98vw;
+    padding: 3rem;
+    font-size: 5rem;
+    line-height: 8rem;
+    text-align: left;
+  }
+  button {
+    margin-right: 30%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 70%;
+  }
+  .login {
+    width: 90vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+  .login {
+    width: 70vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+  .login {
+    width: 50vw;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 72.5%;
+  }
+  .login {
+    width: 50vw;
+  }
+}

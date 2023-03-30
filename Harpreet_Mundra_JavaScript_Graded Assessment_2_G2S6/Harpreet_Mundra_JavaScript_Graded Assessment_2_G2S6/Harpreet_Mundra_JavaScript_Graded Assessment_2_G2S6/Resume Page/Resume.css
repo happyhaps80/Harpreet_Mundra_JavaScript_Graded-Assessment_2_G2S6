@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 99vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95vw;
+  height: 10.5vh;
+  padding: 2rem;
+  background-color: rgb(16, 5, 80);
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.search-div {
+  width: 60vw;
+}
+.search-div input {
+  height: 7vh;
+  width: 98%;
+  font-size: 2.8rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+}
+button {
+  width: 5vw;
+  height: 5vh;
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.resume-header {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: cadetblue;
+  justify-content: space-around;
+}
+.resume-header img {
+  display: flex;
+  width: auto;
+  height: 8rem;
+}
+.resume-header h1 {
+  font-size: 4rem;
+}
+.resume-header span,
+p {
+  font-size: 2rem;
+}
+
+.resume-main {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-left-section {
+  width: 35vw;
+  background-color: rgb(0, 194, 243);
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+  height: fit-content;
+  margin-top: 1rem;
+}
+.resume-left-section h3 {
+  font-size: 2.3rem;
+}
+
+.resume-right-section {
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+  height: fit-content;
+  margin-left: 2rem;
+}
+.resume-right-section h3 {
+  font-size: 2.5rem;
+}
+.work-experience,
+.education,
+.internship,
+.projects p,
+li {
+  margin: 1rem 0;
+}
+ul {
+  margin-left: 3rem;
+}
+.personal-info,
+.technical-skills,
+.hobbies,
+.education,
+.internship,
+.achievements li {
+  font-size: 2rem;
+}
+.company-details p {
+  margin: 0.5rem 0;
+}
+
+.company-name-span,
+.position-span,
+.start-date-span,
+.end-date-span,
+.summary-span,
+#project-span,
+.education-span {
+  font-weight: 600;
+}
+.border-class {
+  border: 2px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+button:hover {
+  background-color: rgb(105, 7, 7);
+}
+button:active {
+  color: yellow;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .search-div {
+    width: 45vw;
+  }
+
+  button {
+    width: 12vw;
+    height: 5vh;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+
+  .resume-main {
+    flex-direction: column;
+  }
+  .resume-left-section {
+    width: 95vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  .search-div {
+    width: 45vw;
+  }
+  .search-div {
+    width: 45vw;
+  }
+
+  button {
+    width: 12vw;
+    height: 5vh;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  .search-div {
+    width: 45vw;
+  }
+
+  button {
+    width: 12vw;
+    height: 7vh;
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+  button {
+    width: 12vw;
+    height: 7vh;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 72.5%;
+  }
+  button {
+    width: 10vw;
+    height: 7vh;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
